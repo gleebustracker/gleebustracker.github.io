@@ -64,9 +64,10 @@
 
     <script>
         const apiKey = '712ab1c8fe1d41e4af431190c4d344a3';
-        const busNumbers = ['2020'];
+        const busNumbers = ['2260', '2434'];
         const icons = {
-            '2020': 'https://i.ibb.co/JtvMwTc/Screenshot-2024-09-30-100805.png'
+            '2260': 'albert.png', 
+	    '2434': 'drmajor.png'
 };
         let map;
         let busList = document.getElementById('buses');
@@ -147,7 +148,10 @@
         function getLivery(busNumber) {
             // This function should return the livery based on the bus number
             // You can implement your logic to determine the livery
-			if(busNumber == 2020){
+			if(busNumber == 2260){
+			return "GLEE BUS"
+			}
+			if(busNumber == 2434){
 			return "GLEE BUS"
 			}
             
